@@ -30,3 +30,54 @@ nav ul li a {
 nav ul li a:hover {
   color: orange;
 }
+
+/* Headings */
+h1, h2, h3, h4 {
+  text-align: center;
+  color: #004080;
+}
+
+/* Layouts */
+.attendees, .nonattendees, .agenda, .postmeeting {
+  display: inline-block;
+  width: 45%;
+  margin: 1rem;
+  vertical-align: top;
+  border: 2px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Grid  */
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 1rem;
+  background-color: #e0f7fa;
+}
+
+.images img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Flexbox */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Media */
+@media (max-width: 768px) {
+  .attendees, .nonattendees, .agenda, .postmeeting {
+    width: 90%;
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
