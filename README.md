@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-URL: https://invertedvoice.github.io/Lab2_Starter/
+# Lab 3 - Starter
+URL: https://invertedvoice.github.io/lab3-starter/
