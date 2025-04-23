@@ -149,3 +149,51 @@ footer {
   position: relative;
 }
 
+/* Pseudo-classes */
+a:active {
+  color: red;
+}
+
+button:hover {
+  background-color: lightgreen;
+}
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Selectors */
+.attendees > ul li {
+  color: green;
+}
+
+.nonattendees + .agenda {
+  background-color: #ffe0e0;
+}
+
+.agenda ~ .postmeeting {
+  border-color: tomato;
+}
+
+.attendees, .nonattendees {
+  font-size: 1rem;
+}
+
+/* New Selectors */
+form:has(input[type="checkbox"]) {
+  background-color: #f0f8ff;
+  padding: 1rem;
+}
+
+/* Nested selector */
+fieldset {
+  display: block;
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px dashed #ccc;
+  & label {
+    color: #555;
+  }
+  & input[type="radio"]:hover {
+    transform: scale(1.1);
+  }
+}
